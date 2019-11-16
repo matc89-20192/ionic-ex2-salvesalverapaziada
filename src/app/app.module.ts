@@ -1,3 +1,4 @@
+import { Page2 } from './../pages/page2/page2';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -8,7 +9,8 @@ import { MyApp } from './app.component';
 
 @NgModule({
   declarations: [
-    MyApp
+    MyApp,
+    Page2
   ],
   imports: [
     BrowserModule,
@@ -16,7 +18,8 @@ import { MyApp } from './app.component';
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp
+    MyApp,
+    Page2
   ],
   providers: [
     StatusBar,
