@@ -8,9 +8,7 @@ import { Page2 } from '../page2/page2';
   templateUrl: 'page1.html'
 })
 export class Page1 {
-
   nome: string = 'Fulano';
-
   complemento: string = ', ';
 
   constructor(public navCtrl: NavController) {
@@ -24,7 +22,7 @@ export class Page1 {
   receveidData(att: string) {
 
     if (att == "") {
-      this.complemento = "";
+      this.complemento = "!";
     } else {
       this.complemento = ", ";
     }

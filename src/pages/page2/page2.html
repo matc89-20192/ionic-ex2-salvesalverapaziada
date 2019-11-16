@@ -1,17 +1,17 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Page Two</ion-title>
-  </ion-navbar>
+        <ion-title>Page Two</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-label>Usuario:</ion-label>
-  <ion-input id=editText [(ngModel)]="nome"></ion-input>
+    <ion-label>Usuario:</ion-label>
+    <ion-input id=editText [(ngModel)]="nome"></ion-input>
 
-  <button ion-button secondary (click)="changeUser()" id=btnConfirmar>Confirmar</button>
+    <button ion-button secondary (click)="TrocarUsuario()" id=btnConfirmar>Confirmar</button>
 
-  <button ion-button secondary (click)="changeUserCancel()" id=btnCancelar>Cancelar</button>
+    <button ion-button secondary (click)="TrocarUsuarioCancelado()" id=btnCancelar>Cancelar</button>
 </ion-content>

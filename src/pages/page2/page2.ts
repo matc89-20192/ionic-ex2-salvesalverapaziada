@@ -11,28 +11,27 @@ export class Page2 {
 
   nome: string = "";
 
-  nomePrevious: string = "";
+  nomeAnterior: string = "";
 
   callback: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    // If we navigated to this page, we will have an item available as a nav param
     this.nome = this.navParams.get('nome');
 
     this.callback = this.navParams.get('callback');
 
-    this.nomePrevious = this.nome;
+    this.nomeAnterior = this.nome;
 
   }
 
-  changeUser() {
+  TrocarUsuario() {
 
     this.callback(this.nome);
 
     this.navCtrl.pop();
   }
 
-  changeUserCancel() {
+  TrocarUsuarioCancelado() {
     this.navCtrl.pop();
   }
 }
