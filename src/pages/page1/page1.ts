@@ -10,23 +10,17 @@ import { Page2 } from '../page2/page2';
 export class Page1 {
   nome: string = 'Fulano';
   texto: string = 'Oi, ';
-
   constructor(public navCtrl: NavController) {
-
   }
-
   TrocarUsuarioP1() {
     this.navCtrl.push(Page2, { nome: this.nome, 'callback': this.receveidData.bind(this) });
   }
-
   receveidData(atualizado: string) {
-
     if (atualizado == "") {
-      this.texto = "Oi!";
+      this.texto = "Oi! ";
     } else {
       this.texto = "Oi, ";
     }
     this.nome = atualizado;
   }
-
 }
