@@ -1,14 +1,14 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
+    <ion-navbar>
+        <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Page One</ion-title>
-  </ion-navbar>
+        <ion-title>Page One</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <h1 id=textView>Oi{{ complemento }}{{ nome }}!</h1>
+    <h1 id=textView>{{ texto }}{{ nome }}!</h1>
 
-  <button ion-button secondary (click)="changeUser()" id=btnTrocar>Trocar usuário</button>
+    <button ion-button secondary (click)="TrocarUsuarioP1()" id=btnTrocar>Trocar usuário</button>
 </ion-content>

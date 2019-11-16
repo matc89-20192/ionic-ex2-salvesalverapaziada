@@ -24,7 +24,7 @@ export class Page2 {
 
   }
 
-  TrocarUsuario() {
+  TrocarUsuarioP2() {
 
     this.callback(this.nome);
 

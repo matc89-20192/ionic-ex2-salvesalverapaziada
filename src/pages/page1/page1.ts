@@ -9,24 +9,24 @@ import { Page2 } from '../page2/page2';
 })
 export class Page1 {
   nome: string = 'Fulano';
-  complemento: string = ', ';
+  texto: string = 'Oi, ';
 
   constructor(public navCtrl: NavController) {
 
   }
 
-  changeUser() {
+  TrocarUsuarioP1() {
     this.navCtrl.push(Page2, { nome: this.nome, 'callback': this.receveidData.bind(this) });
   }
 
-  receveidData(att: string) {
+  receveidData(atualizado: string) {
 
-    if (att == "") {
-      this.complemento = "!";
+    if (atualizado == "") {
+      this.texto = "Oi!";
     } else {
-      this.complemento = ", ";
+      this.texto = "Oi, ";
     }
-    this.nome = att;
+    this.nome = atualizado;
   }
 
 }
